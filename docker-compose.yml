@@ -1,0 +1,26 @@
+version: '3'
+services:
+  app:
+    restart: always
+    build: .
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo
+    ports:
+      - '27017:27017'
+
+  nginx:
+    build: ./nginx
+    ports:
+      - "80:80"
+    volumes:
+      - wwwroot:/wwwroot
+    depends_on:
+      - app
+    command: nginx -g "daemon off;"
+
+volumes:
+  wwwroot:
+    driver: local
