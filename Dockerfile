@@ -15,4 +15,4 @@ RUN yarn run webpack --mode production
 
 EXPOSE 3000
 
-CMD ["node", "api/server.js"]
+CMD ["node", "src/server/index.js"]

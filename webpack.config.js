@@ -3,14 +3,11 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const webpack = require('webpack')
 
 module.exports = {
-  // entry: "./src/server.js",
-  // entry: {
-  //   'production-dependencies': ['phaser']
-  // },
-  // output: {
-  //   path: path.join(__dirname, '/dist'),
-  //   filename: 'bundle.js'
-  // },
+  entry: './src/client/index.js',
+  output: {
+    path: path.join(__dirname, '/dist'),
+    filename: 'bundle.js'
+  },
   module: {
     rules: [
       {
@@ -28,7 +25,7 @@ module.exports = {
   plugins: [
     new CopyWebpackPlugin([
       {
-        from: path.resolve(__dirname, 'src/index.html'),
+        from: path.resolve(__dirname, 'src/client/index.html'),
         to: path.resolve(__dirname, 'dist')
       }
     ]),

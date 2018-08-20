@@ -4,7 +4,7 @@ class App extends Component {
   render () {
     return (
       <div>
-        <h1>The App</h1>
+        <h1>Non-Game React App Stuff</h1>
       </div>
     )
   }
