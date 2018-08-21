@@ -22,7 +22,7 @@ Technology Buzzwords!
 Installing
 ----------
 * Install Docker from [https://www.docker.com/get-started]
-* clone this repository
+* clone this repository `git clone https://github.com/dreamerjake/phaser3-base.git`
 * make any necessary/desired changes to the config files
 * run with `docker-compose up --build`
 
