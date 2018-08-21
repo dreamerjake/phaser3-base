@@ -11,6 +11,7 @@ Technology Buzzwords!
 * Frontend Library: React.js
 * JavaScript Syntax: ES6
 * Database: MongoDB
+* Object Document Mapper: Mongoose
 * Web Server: Nginx
 * Game Framework: Phaser 3
 * Bundling: Webpack 4
