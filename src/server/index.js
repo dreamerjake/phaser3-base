@@ -1,5 +1,7 @@
 const express = require('express')
 const mongoose = require('mongoose')
+const passport = require('passport')
+const GoogleStrategy = require('passport-google-oauth20').Strategy
 
 // Database Setup
 // noinspection JSIgnoredPromiseFromCall
@@ -18,5 +20,9 @@ app.get('/test', (req, res) => {
   res.send({test: 'success'})
 })
 
-const PORT = process.env.PORT || 3000
+passport.use(new GoogleStrategy())
+
+// const PORT = process.env.PORT || 3000
+const PORT = 3000
+
 app.listen(PORT, () => console.log(`Listening on port ${PORT}`))
