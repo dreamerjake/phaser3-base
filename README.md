@@ -18,6 +18,7 @@ Technology Buzzwords!
 * Transpiling: Babel
 * Package Manager: Yarn
 * Containers: Docker
+* OAuth: Passport.js
 
 Installing
 ----------
