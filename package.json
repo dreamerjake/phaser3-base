@@ -6,7 +6,7 @@
   "author": "Jake Silverman",
   "private": true,
   "scripts": {
-    "start": "node api/server.js",
+    "start": "node src/server/index.js",
     "build": "webpack --mode production"
   },
   "devDependencies": {

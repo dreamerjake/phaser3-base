@@ -1,6 +1,14 @@
+# IDE
 .idea/
+
+# Node
 node_modules/
+
+# Webpack output
 dist/
+
+# Workspace
 notes/
 
+# Config
 keys.js
